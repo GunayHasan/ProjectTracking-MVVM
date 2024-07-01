@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".AddProjectActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Book"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="80dp"/>
+    
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_background"
+        android:paddingHorizontal="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/editLanguages"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Language"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="8dp"
+            android:background="@drawable/edittext_background"
+            android:layout_weight="0.6"
+            android:layout_marginStart="4dp"/>
+
+        <EditText
+            android:id="@+id/editWatchers"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Watcher"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="8dp"
+            android:background="@drawable/edittext_background"
+            android:layout_weight="0.4"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editIssues"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Issues"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_background"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="ADD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:background="@drawable/button_background"/>
+
+</LinearLayout>
